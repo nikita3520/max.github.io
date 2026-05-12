@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #1a1a1a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.page-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.anchor-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.anchor-menu a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section-gray {
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: 16px 0;
+    padding: 32px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 16px;
+}
+
+h1 {
+    font-size: clamp(28px, 4vw, 42px);
+}
+
+p {
+    margin: 0 0 16px;
+    line-height: 1.6;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li {
+    margin-bottom: 10px;
+    padding-left: 18px;
+}
+
+.product-list li::before {
+    content: "•";
+    color: #1a1a1a;
+    display: inline-block;
+    width: 18px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.benefit-card,
+.review-card {
+    background-color: #fafafa;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.review-card {
+    margin-bottom: 16px;
+}
+
+.review-card span {
+    display: block;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.reviews {
+    display: grid;
+    gap: 16px;
+}
+
+.order-form {
+    display: grid;
+    gap: 14px;
+}
+
+.order-form label {
+    display: grid;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.order-form input,
+.order-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.95;
+}
+
+.form-message {
+    min-height: 24px;
+    color: #0a7a0a;
+}
+
+.footer {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+}
+
+@media (max-width: 680px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .anchor-menu {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

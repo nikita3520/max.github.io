@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>MAX — Российская соцсеть</title>
+    <meta name="description" content="Простая посадочная страница для российской социальной сети MAX">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script defer src="./style.js"></script>
+</head>
+<body>
+    <header class="page-header">
+        <div class="container header-inner">
+            <div class="logo">MAX</div>
+            <nav class="anchor-menu">
+                <a href="#product">О сети</a>
+                <a href="#benefits">Преимущества</a>
+                <a href="#portfolio">Отзывы</a>
+                <a href="#order">Заказать</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section id="product" class="section">
+            <h1>MAX — новая российская соцсеть</h1>
+            <p>Общайтесь с друзьями, делитесь идеями и находите новых людей в удобном и понятном сервисе.</p>
+            <ul class="product-list">
+                <li>Простая регистрация</li>
+                <li>Локальные сообщества</li>
+                <li>Контроль над данными</li>
+            </ul>
+        </section>
+        <section id="benefits" class="section section-gray">
+            <h2>Почему MAX</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Удобство</h3>
+                    <p>Простой интерфейс без лишних элементов для быстрого доступа к функциям.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Безопасность</h3>
+                    <p>Локальное хранение данных и грамотная защита личной информации.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Сообщества</h3>
+                    <p>Найдите людей по интересам и создавайте новые группы легко.</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="section">
+            <h2>Отзывы</h2>
+            <div class="reviews">
+                <article class="review-card">
+                    <p>«MAX помог найти единомышленников и удобно общаться без сложных настроек.»</p>
+                    <span>— Марина</span>
+                </article>
+                <article class="review-card">
+                    <p>«Нравится, что все быстро загружается и работает понятно.»</p>
+                    <span>— Сергей</span>
+                </article>
+            </div>
+        </section>
+        <section id="order" class="section section-gray">
+            <h2>Форма заказа</h2>
+            <p>Оставьте заявку, и мы свяжемся с вами для подключения к закрытому запуску.</p>
+            <form id="orderForm" class="order-form">
+                <label>
+                    <span>Имя</span>
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </label>
+                <label>
+                    <span>Телефон</span>
+                    <input type="tel" name="phone" placeholder="+7 (900) 000-00-00" required>
+                </label>
+                <label>
+                    <span>Комментарий</span>
+                    <textarea name="message" placeholder="Расскажите, что важно" rows="4"></textarea>
+                </label>
+                <button type="submit">Отправить заявку</button>
+                <div id="formMessage" class="form-message" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>MAX — социальная сеть для общения, роста и новых связей.</p>
+    </footer>
+</body>
+</html>
